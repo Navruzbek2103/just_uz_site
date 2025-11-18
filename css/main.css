@@ -46,6 +46,10 @@ html{
 
 body{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    position: relative;
     margin: 0;
     padding: 0;
 }
@@ -95,14 +99,23 @@ a{
 
 /* HEADER STYLE START */
 
-header{
-    position: fixed;
+.general-header{
+    /* border: 1px solid red; */
+    height: 900px;
+}
+
+.header{
+    position: sticky;
     top: 0;
     z-index: 2;
     background-color: transparent;
     width: 100%;
     box-shadow: 0 2px 15px 0px lightgrey;
     border-bottom: 1px solid black;
+}
+
+.header-active{
+    background-color: #fff;
 }
 
 .nav{
@@ -982,7 +995,7 @@ header{
 }
 
 @media only screen and (max-width: 670px){
-    header{
+    .header{
         /* position: fixed; */
         /* top: 0; */
         height: 115px;
@@ -1224,7 +1237,7 @@ header{
 }
 
 @media only screen and (max-width: 560px){
-    header{
+    .header{
         /* position: fixed; */
         /* top: 0; */
         height: 101px;
@@ -1468,7 +1481,7 @@ header{
     .container{
         padding: 0 17px;
     }
-    header{
+    .header{
         /* position: fixed; */
         /* top: 0; */
         height: 95px;
@@ -1712,7 +1725,7 @@ header{
     .container{
         padding: 0 15px;
     }
-    header{
+    .header{
         /* position: fixed; */
         /* top: 0; */
         height: 81px;
@@ -1958,7 +1971,9 @@ header{
 
 
 /* MAIN STYLE START */
-
+main {
+    flex: 1; 
+}
 /* Intro section start */
 .intro-container-big{
     /* position: absolute; */
@@ -1968,6 +1983,7 @@ header{
     /* left: calc((100% / 2) - 720px); */
     width: 100%;
     /* border: 1px solid red; */
+    margin-top: -900px;
     background-image: url("./../images/hero-image2.jpg");
     background-position: top left;
     background-repeat: no-repeat;

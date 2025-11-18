@@ -1,0 +1,633 @@
+.signin-general-header{
+    height: 640px;
+}
+
+.signin-header{
+    background-color: #fff;
+}
+.signInIntro-container-big{
+    margin-top: -642px;
+    padding: 160px 60px;
+    /* border: 1px solid red; */
+    background-color: rgb(241, 239, 239);
+}
+
+.signInIntro-wrapper{
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 50px;
+    border-radius: 8px;
+    border: 1px solid grey;
+    background-color: #fff;
+}
+
+.signInIntro-wrapper-title{
+    font-size: 48px;
+    line-height: 56px;
+    color: #333 ;
+    font-family: "Plus Jakarta Sans";
+}
+
+.signInIntro-wrapper-form{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    border-bottom: 1px solid grey;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.signInIntro-wrapper-label{
+    position: relative;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+.signInIntro-wrapper-label::before{
+    content: "*";
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    color: red;
+}
+
+.signInIntro-wrapper-input{
+    display: inline-block;
+    padding: 12px 15px;
+    width: 100%;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    line-height: 24px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.signInIntro-wrapper-input::placeholder{
+    font-size: 18px;
+    font-family: "Plus Jakarta Sans";
+    line-height: 24px;
+}
+
+.signInIntro-wrapper-btn{
+    /* border: 1px solid red; */
+    padding: 12px 12px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    font-family: "Plus Jakarta Sans";
+    border: none;
+    background-color: #F55D25;
+    border-radius: 5px;
+}
+
+.signInIntro-wrapper-text{
+    color: grey;
+    /* border: 1px solid red; */
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans";
+}
+
+.signInIntro-wrapper-text-link{
+    color: #038ECA;
+}
+
+@media only screen and (max-width: 992px){
+    .signin-general-header{
+        height: 550px;
+    }
+
+    /* .signin-header{ */
+        /* background-color: #fff; */
+    /* } */
+    .signInIntro-container-big{
+        margin-top: -550px;
+        padding: 110px 50px;
+        /* border: 1px solid red; */
+        /* background-color: rgb(241, 239, 239); */
+    }
+
+    /* .signInIntro-wrapper{ */
+        /* max-width: 850px; */
+        /* margin: 0 auto; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* gap: 30px; */
+        /* padding: 50px 50px; */
+        /* border-radius: 8px; */
+        /* border: 1px solid grey; */
+        /* background-color: #fff; */
+    /* } */
+
+    .signInIntro-wrapper-title{
+        font-size: 40px;
+        /* line-height: 56px; */
+        /* color: #333 ; */
+        /* font-family: "Plus Jakarta Sans"; */
+    }
+
+    .signInIntro-wrapper-form{
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* font-weight: 700; */
+        /* border-bottom: 1px solid grey; */
+        /* width: 100%; */
+        padding-bottom: 35px;
+    }
+
+    .signInIntro-wrapper-label{
+        /* position: relative; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        line-height: 22px;
+        /* text-transform: capitalize; */
+        /* margin-bottom: 10px; */
+        /* padding-left: 15px; */
+    }
+
+    /* .signInIntro-wrapper-label::before{
+        content: "*";
+        position: absolute;
+        left: 0;
+        display: inline-block;
+        color: red;
+    } */
+
+    .signInIntro-wrapper-input{
+        /* display: inline-block; */
+        /* padding: 12px 15px; */
+        /* width: 100%; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 18px; */
+        /* line-height: 24px; */
+        /* border: 1px solid grey; */
+        /* border-radius: 5px; */
+        margin-bottom: 25px;
+    }
+
+    /* .signInIntro-wrapper-input::placeholder{
+        font-size: 18px;
+        font-family: "Plus Jakarta Sans";
+        line-height: 24px;
+    } */
+
+    /* .signInIntro-wrapper-btn{ */
+        /* border: 1px solid red; */
+        /* padding: 12px 12px; */
+        /* font-size: 18px; */
+        /* line-height: 24px; */
+        /* color: #fff; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* border: none; */
+        /* background-color: #F55D25; */
+        /* border-radius: 5px; */
+    /* } */
+
+    /* .signInIntro-wrapper-text{ */
+        /* color: grey; */
+        /* border: 1px solid red; */
+        /* font-size: 16px; */
+        /* font-family: "Plus Jakarta Sans"; */
+    /* } */
+
+    /* .signInIntro-wrapper-text-link{
+        color: #038ECA;
+    } */
+
+}
+
+@media only screen and (max-width: 700px){
+    .signin-general-header{
+        height: 540px;
+    }
+
+    /* .signin-header{ */
+        /* background-color: #fff; */
+    /* } */
+    .signInIntro-container-big{
+        margin-top: -540px;
+        padding: 100px 50px;
+        padding-bottom: 60px;
+        /* border: 1px solid red; */
+        /* background-color: rgb(241, 239, 239); */
+    }
+
+    .signInIntro-wrapper{
+        /* max-width: 850px; */
+        /* margin: 0 auto; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* gap: 30px; */
+        padding: 30px;
+        /* border-radius: 8px; */
+        /* border: 1px solid grey; */
+        /* background-color: #fff; */
+    }
+
+    /* .signInIntro-wrapper-title{ */
+        /* font-size: 40px; */
+        /* line-height: 56px; */
+        /* color: #333 ; */
+        /* font-family: "Plus Jakarta Sans"; */
+    /* } */
+
+    .signInIntro-wrapper-form{
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* font-weight: 700; */
+        /* border-bottom: 1px solid grey; */
+        /* width: 100%; */
+        padding-bottom: 30px;
+    }
+
+    /* .signInIntro-wrapper-label{ */
+        /* position: relative; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* line-height: 22px; */
+        /* text-transform: capitalize; */
+        /* margin-bottom: 10px; */
+        /* padding-left: 15px; */
+    /* } */
+
+    /* .signInIntro-wrapper-label::before{
+        content: "*";
+        position: absolute;
+        left: 0;
+        display: inline-block;
+        color: red;
+    } */
+
+    .signInIntro-wrapper-input{
+        /* display: inline-block; */
+        /* padding: 12px 15px; */
+        /* width: 100%; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 18px; */
+        /* line-height: 24px; */
+        /* border: 1px solid grey; */
+        /* border-radius: 5px; */
+        margin-bottom: 20px;
+    }
+
+    /* .signInIntro-wrapper-input::placeholder{
+        font-size: 18px;
+        font-family: "Plus Jakarta Sans";
+        line-height: 24px;
+    } */
+
+    /* .signInIntro-wrapper-btn{ */
+        /* border: 1px solid red; */
+        /* padding: 12px 12px; */
+        /* font-size: 18px; */
+        /* line-height: 24px; */
+        /* color: #fff; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* border: none; */
+        /* background-color: #F55D25; */
+        /* border-radius: 5px; */
+    /* } */
+
+    /* .signInIntro-wrapper-text{ */
+        /* color: grey; */
+        /* border: 1px solid red; */
+        /* font-size: 16px; */
+        /* font-family: "Plus Jakarta Sans"; */
+    /* } */
+
+    /* .signInIntro-wrapper-text-link{
+        color: #038ECA;
+    } */
+
+}
+
+@media only screen and (max-width: 670px){
+    .signin-general-header{
+        height: 590px;
+    }
+
+    /* .signin-header{ */
+        /* background-color: #fff; */
+    /* } */
+    .signInIntro-container-big{
+        margin-top: -590px;
+        padding: 150px 30px;
+        padding-bottom: 60px;
+        /* border: 1px solid red; */
+        /* background-color: rgb(241, 239, 239); */
+    }
+
+    /* .signInIntro-wrapper{ */
+        /* max-width: 850px; */
+        /* margin: 0 auto; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* gap: 30px; */
+        /* padding: 30px; */
+        /* border-radius: 8px; */
+        /* border: 1px solid grey; */
+        /* background-color: #fff; */
+    /* } */
+
+    /* .signInIntro-wrapper-title{ */
+        /* font-size: 40px; */
+        /* line-height: 56px; */
+        /* color: #333 ; */
+        /* font-family: "Plus Jakarta Sans"; */
+    /* } */
+
+    /* .signInIntro-wrapper-form{ */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* font-weight: 700; */
+        /* border-bottom: 1px solid grey; */
+        /* width: 100%; */
+        /* padding-bottom: 30px; */
+    /* } */
+
+    /* .signInIntro-wrapper-label{ */
+        /* position: relative; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* line-height: 22px; */
+        /* text-transform: capitalize; */
+        /* margin-bottom: 10px; */
+        /* padding-left: 15px; */
+    /* } */
+
+    /* .signInIntro-wrapper-label::before{
+        content: "*";
+        position: absolute;
+        left: 0;
+        display: inline-block;
+        color: red;
+    } */
+
+    /* .signInIntro-wrapper-input{ */
+        /* display: inline-block; */
+        /* padding: 12px 15px; */
+        /* width: 100%; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 18px; */
+        /* line-height: 24px; */
+        /* border: 1px solid grey; */
+        /* border-radius: 5px; */
+        /* margin-bottom: 20px; */
+    /* } */
+
+    /* .signInIntro-wrapper-input::placeholder{
+        font-size: 18px;
+        font-family: "Plus Jakarta Sans";
+        line-height: 24px;
+    } */
+
+    /* .signInIntro-wrapper-btn{ */
+        /* border: 1px solid red; */
+        /* padding: 12px 12px; */
+        /* font-size: 18px; */
+        /* line-height: 24px; */
+        /* color: #fff; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* border: none; */
+        /* background-color: #F55D25; */
+        /* border-radius: 5px; */
+    /* } */
+
+    /* .signInIntro-wrapper-text{ */
+        /* color: grey; */
+        /* border: 1px solid red; */
+        /* font-size: 16px; */
+        /* font-family: "Plus Jakarta Sans"; */
+    /* } */
+
+    /* .signInIntro-wrapper-text-link{
+        color: #038ECA;
+    } */
+
+}
+
+@media only screen and (max-width: 550px){
+    .signin-general-header{
+        height: 535px;
+    }
+
+    /* .signin-header{ */
+        /* background-color: #fff; */
+    /* } */
+    .signInIntro-container-big{
+        margin-top: -535px;
+        padding: 140px 10px;
+        padding-bottom: 50px;
+        /* border: 1px solid red; */
+        /* background-color: rgb(241, 239, 239); */
+    }
+
+    .signInIntro-wrapper{
+        /* max-width: 850px; */
+        /* margin: 0 auto; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        gap: 25px;
+        padding: 25px 20px;
+        /* border-radius: 8px; */
+        /* border: 1px solid grey; */
+        /* background-color: #fff; */
+    }
+
+    .signInIntro-wrapper-title{
+        font-size: 32px;
+        line-height: 40px;
+        /* color: #333 ; */
+        /* font-family: "Plus Jakarta Sans"; */
+    }
+
+    /* .signInIntro-wrapper-form{ */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* font-weight: 700; */
+        /* border-bottom: 1px solid grey; */
+        /* width: 100%; */
+        /* padding-bottom: 30px; */
+    /* } */
+
+    /* .signInIntro-wrapper-label{ */
+        /* position: relative; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* line-height: 22px; */
+        /* text-transform: capitalize; */
+        /* margin-bottom: 10px; */
+        /* padding-left: 15px; */
+    /* } */
+
+    /* .signInIntro-wrapper-label::before{
+        content: "*";
+        position: absolute;
+        left: 0;
+        display: inline-block;
+        color: red;
+    } */
+
+    /* .signInIntro-wrapper-input{ */
+        /* display: inline-block; */
+        /* padding: 12px 15px; */
+        /* width: 100%; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 18px; */
+        /* line-height: 24px; */
+        /* border: 1px solid grey; */
+        /* border-radius: 5px; */
+        /* margin-bottom: 20px; */
+    /* } */
+
+    /* .signInIntro-wrapper-input::placeholder{
+        font-size: 18px;
+        font-family: "Plus Jakarta Sans";
+        line-height: 24px;
+    } */
+
+    /* .signInIntro-wrapper-btn{ */
+        /* border: 1px solid red; */
+        /* padding: 12px 12px; */
+        /* font-size: 18px; */
+        /* line-height: 24px; */
+        /* color: #fff; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* border: none; */
+        /* background-color: #F55D25; */
+        /* border-radius: 5px; */
+    /* } */
+
+    /* .signInIntro-wrapper-text{ */
+        /* color: grey; */
+        /* border: 1px solid red; */
+        /* font-size: 16px; */
+        /* font-family: "Plus Jakarta Sans"; */
+    /* } */
+
+    /* .signInIntro-wrapper-text-link{
+        color: #038ECA;
+    } */
+
+}
+
+@media only screen and (max-width: 450px){
+    .signin-general-header{
+        height: 510px;
+    }
+
+    /* .signin-header{ */
+        /* background-color: #fff; */
+    /* } */
+    .signInIntro-container-big{
+        margin-top: -510px;
+        padding: 130px 5px;
+        padding-bottom: 40px;
+        /* border: 1px solid red; */
+        /* background-color: rgb(241, 239, 239); */
+    }
+
+    .signInIntro-wrapper{
+        /* max-width: 850px; */
+        /* margin: 0 auto; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        gap: 20px;
+        padding: 25px 20px;
+        /* border-radius: 8px; */
+        /* border: 1px solid grey; */
+        /* background-color: #fff; */
+    }
+
+    .signInIntro-wrapper-title{
+        font-size: 32px;
+        line-height: 40px;
+        /* color: #333 ; */
+        /* font-family: "Plus Jakarta Sans"; */
+    }
+
+    .signInIntro-wrapper-form{
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* font-weight: 700; */
+        /* border-bottom: 1px solid grey; */
+        /* width: 100%; */
+        padding-bottom: 20px;
+    }
+
+    .signInIntro-wrapper-label{
+        /* position: relative; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* line-height: 22px; */
+        /* text-transform: capitalize; */
+        margin-bottom: 8px;
+        /* padding-left: 15px; */
+    }
+
+    /* .signInIntro-wrapper-label::before{
+        content: "*";
+        position: absolute;
+        left: 0;
+        display: inline-block;
+        color: red;
+    } */
+
+    .signInIntro-wrapper-input{
+        /* display: inline-block; */
+        padding: 8px 15px;
+        /* width: 100%; */
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 16px;
+        /* line-height: 24px; */
+        /* border: 1px solid grey; */
+        /* border-radius: 5px; */
+        margin-bottom: 15px;
+    }
+
+    .signInIntro-wrapper-input::placeholder{
+        font-size: 16px;
+        /* font-family: "Plus Jakarta Sans"; */
+        /* line-height: 24px; */
+    }
+
+    .signInIntro-wrapper-btn{
+        /* border: 1px solid red; */
+        padding: 9px 12px;
+        font-size: 16px;
+        /* line-height: 24px; */
+        /* color: #fff; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* border: none; */
+        /* background-color: #F55D25; */
+        /* border-radius: 5px; */
+    }
+
+    .signInIntro-wrapper-text{
+        /* color: grey; */
+        /* border: 1px solid red; */
+        font-size: 14px;
+        text-align: center;
+        /* font-family: "Plus Jakarta Sans"; */
+    }
+
+    /* .signInIntro-wrapper-text-link{
+        color: #038ECA;
+    } */
+
+}
+
+
