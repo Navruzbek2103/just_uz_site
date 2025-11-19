@@ -52,6 +52,7 @@ body{
     position: relative;
     margin: 0;
     padding: 0;
+    background-color: #e9e7e7;
 }
 
 h1, h2, h3, h4, h5, h6, p{
@@ -6274,10 +6275,2436 @@ main {
     /* } */
 }
 
-
-
-
 /* Statistics section end */
+
+
+
+/* Contact section start */
+
+.contact-wrapper{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 40px 0;
+}
+
+.contact-wrapper-title{
+    font-family: "Plus Jakarta Sans";
+    font-size: 38px;
+    line-height: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-wrapper-text{
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 400;
+    color: rgb(72, 72, 72);
+}
+
+.contact-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    gap: 20px;
+}
+
+.contact-item{
+    background-color: #fff;
+    max-width: (calc(100% / 2) - 20px);
+    width: 100%;
+    padding: 24px;
+    border-radius: 18px;
+    border: 1px solid grey;
+}
+
+.contact-item-infoBox{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.contact-item-infoBox-iconBox{
+    /* border: 1px solid red; */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #d7d6d6;
+    margin-right: 14px;
+}
+
+.contact-item-infoBox-iconBox-icon{
+    width: 24px;
+    height: 24px;
+}
+
+.contact-item-infoBox-heading{
+    font-weight: 600;
+    font-family: "Plus Jakarta Sans";
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #333;
+    /* border: 1px solid red; */
+}
+
+.contact-item-infoBox-text{
+    font-weight: 400;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    color: gray;
+    line-height: 32px;
+}
+
+.contact-sublist{
+    /* border: 1px solid red; */
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-subitem{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-subitem-link{
+    color: rgb(77, 76, 76);
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Plus Jakarta Sans";
+}
+
+.contact-workTime{
+    color: rgb(121, 120, 120);
+    font-size: 15px;
+    font-family: "Plus Jakarta Sans";
+    margin-bottom: 20px;
+}
+
+.contact-askAdvice-link{
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+    border: 1px solid grey;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.contact-maps{
+    /* border: 1px solid red; */
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+}
+
+.contact-form{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 100%;
+    width: 100%;
+}
+
+input:not(.contact-btnBox-send), textarea{
+    padding: 12px 10px;
+    border: 1px solid lightgray;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    line-height: 24px;    
+    border-radius: 5px;
+}
+
+input::placeholder{
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.contact-btnBox{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.contact-btnBox-send{
+    color: #fff;
+    background-color: rgb(1, 1, 62);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.contact-btnBox-send:hover{
+    transition: all .2s ease;
+    box-shadow: 0 0 6px 1px blue;
+}
+
+.contact-btnBox-send:active{
+    transition: all .2s ease;
+    transform: scale(.9);
+}
+
+.contact-btnBox-link{
+    color: #000;
+    text-decoration: underline;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    line-height: 24px;
+}
+
+textarea{
+    /* border: 1px solid red; */
+    height: 186px;
+    resize: none;
+    /* max-width: calc(100% - 48px); */
+    width: 100%;
+}
+
+textarea::placeholder{
+    font-family: "Plus Jakarta Sans";
+}
+
+.contact-text{
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    color: grey;
+    line-height: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1253px){
+    /* .contact-wrapper{ */
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* gap: 10px; */
+        /* padding: 40px 0; */
+    /* } */
+
+    .contact-wrapper-title{
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 38px; */
+        line-height: 35px;
+        /* font-weight: 600; */
+        /* margin-bottom: 10px; */
+        /* color: #333; */
+    }
+
+    .contact-wrapper-text{
+        /* margin-bottom: 15px; */
+        /* font-size: 18px; */
+        line-height: 22px;
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-weight: 400; */
+        /* color: rgb(72, 72, 72); */
+    }
+
+    /* .contact-list{ */
+        /* width: 100%; */
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        /* border: 1px solid red; */
+        /* gap: 20px; */
+    /* } */
+
+    /* .contact-item{ */
+        /* background-color: #fff; */
+        /* max-width: (calc(100% / 2) - 20px); */
+        /* width: 100%; */
+        /* padding: 24px; */
+        /* border-radius: 18px; */
+        /* border: 1px solid grey; */
+    /* } */
+
+    .contact-item-infoBox{
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* align-items: flex-start; */
+        /* gap: 10px; */
+        margin-bottom: 25px;
+    }
+
+    .contact-item-infoBox-iconBox{
+        /* border: 1px solid red; */
+        /* width: 50px; */
+        /* height: 50px; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* border-radius: 8px; */
+        /* background-color: #d7d6d6; */
+        margin-right: 10px;
+    }
+
+    /* .contact-item-infoBox-iconBox-icon{ */
+        /* width: 24px; */
+        /* height: 24px; */
+    /* } */
+
+    /* .contact-item-infoBox-heading{ */
+        /* font-weight: 600; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 22px; */
+        /* margin-bottom: 5px; */
+        /* color: #333; */
+        /* border: 1px solid red; */
+    /* } */
+
+    .contact-item-infoBox-text{
+        /* font-weight: 400; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* color: gray; */
+        line-height: 22px;
+    }
+
+    /* .contact-sublist{ */
+        /* border: 1px solid red; */
+        /* margin-bottom: 15px; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* gap: 15px; */
+    /* } */
+
+    /* .contact-subitem{ */
+        /* display: flex; */
+        /* align-items: center; */
+        /* gap: 15px; */
+    /* } */
+
+    /* .contact-subitem-link{ */
+        /* color: rgb(77, 76, 76); */
+        /* font-size: 16px; */
+        /* line-height: 24px; */
+        /* font-family: "Plus Jakarta Sans"; */
+    /* } */
+
+    /* .contact-workTime{ */
+        /* color: rgb(121, 120, 120); */
+        /* font-size: 15px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* margin-bottom: 20px; */
+    /* } */
+
+    /* .contact-askAdvice-link{ */
+        /* display: inline-block; */
+        /* padding: 10px 20px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* color: #000; */
+        /* font-weight: 600; */
+        /* border: 1px solid grey; */
+        /* border-radius: 6px; */
+        /* margin-bottom: 20px; */
+    /* } */
+
+    .contact-maps{
+        /* border: 1px solid red; */
+        /* max-width: 100%; */
+        /* width: 100%; */
+        height: 280px;
+    }
+
+    /* .contact-form{ */
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* gap: 15px; */
+        /* max-width: 100%; */
+        /* width: 100%; */
+    /* } */
+
+    /* input:not(.contact-btnBox-send), textarea{ */
+        /* padding: 12px 10px; */
+        /* border: 1px solid lightgray; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* line-height: 24px;     */
+        /* border-radius: 5px; */
+    /* } */
+
+    /* input::placeholder{ */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* line-height: 24px; */
+    /* } */
+
+    /* .contact-btnBox{ */
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* gap: 15px; */
+        /* margin-bottom: 20px; */
+    /* } */
+
+    /* .contact-btnBox-send{ */
+        /* color: #fff; */
+        /* background-color: rgb(1, 1, 62); */
+        /* border: none; */
+        /* padding: 10px 15px; */
+        /* border-radius: 5px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* line-height: 24px; */
+        /* font-weight: 500; */
+        /* cursor: pointer; */
+        /* transition: all .2s ease; */
+    /* } */
+
+    /* .contact-btnBox-send:hover{ */
+        /* transition: all .2s ease; */
+        /* box-shadow: 0 0 6px 1px blue; */
+    /* } */
+
+    /* .contact-btnBox-send:active{ */
+        /* transition: all .2s ease; */
+        /* transform: scale(.9); */
+    /* } */
+
+    /* .contact-btnBox-link{ */
+        /* color: #000; */
+        /* text-decoration: underline; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* line-height: 24px; */
+    /* } */
+
+    textarea{
+        /* border: 1px solid red; */
+        height: 146px;
+        /* resize: none; */
+        /* max-width: calc(100% - 48px); */
+        /* width: 100%; */
+    }
+
+    /* .contact-text{ */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 14px; */
+        /* color: grey; */
+        /* line-height: 20px; */
+        /* text-align: center; */
+    /* } */
+
+}
+
+@media only screen and (max-width: 1204px){
+    /* .contact-wrapper{ */
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* gap: 10px; */
+        /* padding: 40px 0; */
+    /* } */
+
+    /* .contact-wrapper-title{ */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 38px; */
+        /* line-height: 35px; */
+        /* font-weight: 600; */
+        /* margin-bottom: 10px; */
+        /* color: #333; */
+    /* } */
+
+    /* .contact-wrapper-text{ */
+        /* margin-bottom: 15px; */
+        /* font-size: 18px; */
+        /* line-height: 22px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-weight: 400; */
+        /* color: rgb(72, 72, 72); */
+    /* } */
+
+    /* .contact-list{ */
+        /* width: 100%; */
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        /* border: 1px solid red; */
+        /* gap: 20px; */
+    /* } */
+
+    /* .contact-item{ */
+        /* background-color: #fff; */
+        /* max-width: (calc(100% / 2) - 20px); */
+        /* width: 100%; */
+        /* padding: 24px; */
+        /* border-radius: 18px; */
+        /* border: 1px solid grey; */
+    /* } */
+
+    /* .contact-item-infoBox{ */
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* align-items: flex-start; */
+        /* gap: 10px; */
+        /* margin-bottom: 25px; */
+    /* } */
+
+    /* .contact-item-infoBox-iconBox{ */
+        /* border: 1px solid red; */
+        /* width: 50px; */
+        /* height: 50px; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* border-radius: 8px; */
+        /* background-color: #d7d6d6; */
+        /* margin-right: 10px; */
+    /* } */
+
+    /* .contact-item-infoBox-iconBox-icon{ */
+        /* width: 24px; */
+        /* height: 24px; */
+    /* } */
+
+    /* .contact-item-infoBox-heading{ */
+        /* font-weight: 600; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 22px; */
+        /* margin-bottom: 5px; */
+        /* color: #333; */
+        /* border: 1px solid red; */
+    /* } */
+
+    /* .contact-item-infoBox-text{ */
+        /* font-weight: 400; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* color: gray; */
+        /* line-height: 22px; */
+    /* } */
+
+    /* .contact-sublist{ */
+        /* border: 1px solid red; */
+        /* margin-bottom: 15px; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* gap: 15px; */
+    /* } */
+
+    /* .contact-subitem{ */
+        /* display: flex; */
+        /* align-items: center; */
+        /* gap: 15px; */
+    /* } */
+
+    /* .contact-subitem-link{ */
+        /* color: rgb(77, 76, 76); */
+        /* font-size: 16px; */
+        /* line-height: 24px; */
+        /* font-family: "Plus Jakarta Sans"; */
+    /* } */
+
+    /* .contact-workTime{ */
+        /* color: rgb(121, 120, 120); */
+        /* font-size: 15px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* margin-bottom: 20px; */
+    /* } */
+
+    /* .contact-askAdvice-link{ */
+        /* display: inline-block; */
+        /* padding: 10px 20px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* color: #000; */
+        /* font-weight: 600; */
+        /* border: 1px solid grey; */
+        /* border-radius: 6px; */
+        /* margin-bottom: 20px; */
+    /* } */
+
+    .contact-maps{
+        /* border: 1px solid red; */
+        /* max-width: 100%; */
+        /* width: 100%; */
+        height: 280px;
+    }
+
+    /* .contact-form{ */
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* gap: 15px; */
+        /* max-width: 100%; */
+        /* width: 100%; */
+    /* } */
+
+    /* input:not(.contact-btnBox-send), textarea{ */
+        /* padding: 12px 10px; */
+        /* border: 1px solid lightgray; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* line-height: 24px;     */
+        /* border-radius: 5px; */
+    /* } */
+
+    /* input::placeholder{ */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* line-height: 24px; */
+    /* } */
+
+    /* .contact-btnBox{ */
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* gap: 15px; */
+        /* margin-bottom: 20px; */
+    /* } */
+
+    /* .contact-btnBox-send{ */
+        /* color: #fff; */
+        /* background-color: rgb(1, 1, 62); */
+        /* border: none; */
+        /* padding: 10px 15px; */
+        /* border-radius: 5px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* line-height: 24px; */
+        /* font-weight: 500; */
+        /* cursor: pointer; */
+        /* transition: all .2s ease; */
+    /* } */
+
+    /* .contact-btnBox-send:hover{ */
+        /* transition: all .2s ease; */
+        /* box-shadow: 0 0 6px 1px blue; */
+    /* } */
+
+    /* .contact-btnBox-send:active{ */
+        /* transition: all .2s ease; */
+        /* transform: scale(.9); */
+    /* } */
+
+    /* .contact-btnBox-link{ */
+        /* color: #000; */
+        /* text-decoration: underline; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* line-height: 24px; */
+    /* } */
+
+    textarea{
+        /* border: 1px solid red; */
+        height: 124px;
+        /* resize: none; */
+        /* max-width: calc(100% - 48px); */
+        /* width: 100%; */
+    }
+
+    /* .contact-text{ */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 14px; */
+        /* color: grey; */
+        /* line-height: 20px; */
+        /* text-align: center; */
+    /* } */
+
+}
+
+@media only screen and (max-width: 1133px){
+    /* .contact-wrapper{ */
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* gap: 10px; */
+        /* padding: 40px 0; */
+    /* } */
+
+    /* .contact-wrapper-title{ */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 38px; */
+        /* line-height: 35px; */
+        /* font-weight: 600; */
+        /* margin-bottom: 10px; */
+        /* color: #333; */
+    /* } */
+
+    /* .contact-wrapper-text{ */
+        /* margin-bottom: 15px; */
+        /* font-size: 18px; */
+        /* line-height: 22px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-weight: 400; */
+        /* color: rgb(72, 72, 72); */
+    /* } */
+
+    /* .contact-list{ */
+        /* width: 100%; */
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        /* border: 1px solid red; */
+        /* gap: 20px; */
+    /* } */
+
+    /* .contact-item{ */
+        /* background-color: #fff; */
+        /* max-width: (calc(100% / 2) - 20px); */
+        /* width: 100%; */
+        /* padding: 24px; */
+        /* border-radius: 18px; */
+        /* border: 1px solid grey; */
+    /* } */
+
+    /* .contact-item-infoBox{ */
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* align-items: flex-start; */
+        /* gap: 10px; */
+        /* margin-bottom: 25px; */
+    /* } */
+
+    .contact-item-infoBox-iconBox{
+        /* border: 1px solid red; */
+        /* width: 50px; */
+        height: 45px;
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* border-radius: 8px; */
+        /* background-color: #d7d6d6; */
+        /* margin-right: 10px; */
+    }
+
+    /* .contact-item-infoBox-iconBox-icon{ */
+        /* width: 24px; */
+        /* height: 24px; */
+    /* } */
+
+    /* .contact-item-infoBox-heading{ */
+        /* font-weight: 600; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 22px; */
+        /* margin-bottom: 5px; */
+        /* color: #333; */
+        /* border: 1px solid red; */
+    /* } */
+
+    /* .contact-item-infoBox-text{ */
+        /* font-weight: 400; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* color: gray; */
+        /* line-height: 22px; */
+    /* } */
+
+    /* .contact-sublist{ */
+        /* border: 1px solid red; */
+        /* margin-bottom: 15px; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* gap: 15px; */
+    /* } */
+
+    /* .contact-subitem{ */
+        /* display: flex; */
+        /* align-items: center; */
+        /* gap: 15px; */
+    /* } */
+
+    /* .contact-subitem-link{ */
+        /* color: rgb(77, 76, 76); */
+        /* font-size: 16px; */
+        /* line-height: 24px; */
+        /* font-family: "Plus Jakarta Sans"; */
+    /* } */
+
+    /* .contact-workTime{ */
+        /* color: rgb(121, 120, 120); */
+        /* font-size: 15px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* margin-bottom: 20px; */
+    /* } */
+
+    /* .contact-askAdvice-link{ */
+        /* display: inline-block; */
+        /* padding: 10px 20px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* color: #000; */
+        /* font-weight: 600; */
+        /* border: 1px solid grey; */
+        /* border-radius: 6px; */
+        /* margin-bottom: 20px; */
+    /* } */
+
+    /* .contact-maps{ */
+        /* border: 1px solid red; */
+        /* max-width: 100%; */
+        /* width: 100%; */
+        /* height: 280px; */
+    /* } */
+
+    /* .contact-form{ */
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* gap: 15px; */
+        /* max-width: 100%; */
+        /* width: 100%; */
+    /* } */
+
+    /* input:not(.contact-btnBox-send), textarea{ */
+        /* padding: 12px 10px; */
+        /* border: 1px solid lightgray; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* line-height: 24px;     */
+        /* border-radius: 5px; */
+    /* } */
+
+    /* input::placeholder{ */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* line-height: 24px; */
+    /* } */
+
+    /* .contact-btnBox{ */
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* gap: 15px; */
+        /* margin-bottom: 20px; */
+    /* } */
+
+    /* .contact-btnBox-send{ */
+        /* color: #fff; */
+        /* background-color: rgb(1, 1, 62); */
+        /* border: none; */
+        /* padding: 10px 15px; */
+        /* border-radius: 5px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* line-height: 24px; */
+        /* font-weight: 500; */
+        /* cursor: pointer; */
+        /* transition: all .2s ease; */
+    /* } */
+
+    /* .contact-btnBox-send:hover{ */
+        /* transition: all .2s ease; */
+        /* box-shadow: 0 0 6px 1px blue; */
+    /* } */
+
+    /* .contact-btnBox-send:active{ */
+        /* transition: all .2s ease; */
+        /* transform: scale(.9); */
+    /* } */
+
+    /* .contact-btnBox-link{ */
+        /* color: #000; */
+        /* text-decoration: underline; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* line-height: 24px; */
+    /* } */
+
+    textarea{
+        /* border: 1px solid red; */
+        height: 146px;
+        /* resize: none; */
+        /* max-width: calc(100% - 48px); */
+        /* width: 100%; */
+    }
+
+    /* .contact-text{ */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 14px; */
+        /* color: grey; */
+        /* line-height: 20px; */
+        /* text-align: center; */
+    /* } */
+
+}
+
+@media only screen and (max-width: 992px){
+    .contact-wrapper{
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* gap: 10px; */
+        padding: 30px 0;
+    }
+
+    /* .contact-wrapper-title{ */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 38px; */
+        /* line-height: 35px; */
+        /* font-weight: 600; */
+        /* margin-bottom: 10px; */
+        /* color: #333; */
+    /* } */
+
+    /* .contact-wrapper-text{ */
+        /* margin-bottom: 15px; */
+        /* font-size: 18px; */
+        /* line-height: 22px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-weight: 400; */
+        /* color: rgb(72, 72, 72); */
+    /* } */
+
+    .contact-list{
+        /* width: 100%; */
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        /* border: 1px solid red; */
+        gap: 15px;
+    }
+
+    /* .contact-item{ */
+        /* background-color: #fff; */
+        /* max-width: (calc(100% / 2) - 20px); */
+        /* width: 100%; */
+        /* padding: 24px; */
+        /* border-radius: 18px; */
+        /* border: 1px solid grey; */
+    /* } */
+
+    /* .contact-item-infoBox{ */
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* align-items: flex-start; */
+        /* gap: 10px; */
+        /* margin-bottom: 25px; */
+    /* } */
+
+    .contact-item-infoBox-iconBox{
+        /* border: 1px solid red; */
+        /* width: 50px; */
+        height: 40px;
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* border-radius: 8px; */
+        /* background-color: #d7d6d6; */
+        /* margin-right: 10px; */
+    }
+
+    .contact-item-infoBox-iconBox-icon{
+        width: 20px;
+        height: 20px;
+    }
+
+    /* .contact-item-infoBox-heading{ */
+        /* font-weight: 600; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 22px; */
+        /* margin-bottom: 5px; */
+        /* color: #333; */
+        /* border: 1px solid red; */
+    /* } */
+
+    /* .contact-item-infoBox-text{ */
+        /* font-weight: 400; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* color: gray; */
+        /* line-height: 22px; */
+    /* } */
+
+    /* .contact-sublist{ */
+        /* border: 1px solid red; */
+        /* margin-bottom: 15px; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* gap: 15px; */
+    /* } */
+
+    /* .contact-subitem{ */
+        /* display: flex; */
+        /* align-items: center; */
+        /* gap: 15px; */
+    /* } */
+
+    /* .contact-subitem-link{ */
+        /* color: rgb(77, 76, 76); */
+        /* font-size: 16px; */
+        /* line-height: 24px; */
+        /* font-family: "Plus Jakarta Sans"; */
+    /* } */
+
+    /* .contact-workTime{ */
+        /* color: rgb(121, 120, 120); */
+        /* font-size: 15px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* margin-bottom: 20px; */
+    /* } */
+
+    /* .contact-askAdvice-link{ */
+        /* display: inline-block; */
+        /* padding: 10px 20px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* color: #000; */
+        /* font-weight: 600; */
+        /* border: 1px solid grey; */
+        /* border-radius: 6px; */
+        /* margin-bottom: 20px; */
+    /* } */
+
+    .contact-maps{
+        /* border: 1px solid red; */
+        /* max-width: 100%; */
+        /* width: 100%; */
+        height: 230px;
+    }
+
+    /* .contact-form{ */
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* gap: 15px; */
+        /* max-width: 100%; */
+        /* width: 100%; */
+    /* } */
+
+    /* input:not(.contact-btnBox-send), textarea{ */
+        /* padding: 12px 10px; */
+        /* border: 1px solid lightgray; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* line-height: 24px;     */
+        /* border-radius: 5px; */
+    /* } */
+
+    /* input::placeholder{ */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* line-height: 24px; */
+    /* } */
+
+    /* .contact-btnBox{ */
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* gap: 15px; */
+        /* margin-bottom: 20px; */
+    /* } */
+
+    /* .contact-btnBox-send{ */
+        /* color: #fff; */
+        /* background-color: rgb(1, 1, 62); */
+        /* border: none; */
+        /* padding: 10px 15px; */
+        /* border-radius: 5px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* line-height: 24px; */
+        /* font-weight: 500; */
+        /* cursor: pointer; */
+        /* transition: all .2s ease; */
+    /* } */
+
+    /* .contact-btnBox-send:hover{ */
+        /* transition: all .2s ease; */
+        /* box-shadow: 0 0 6px 1px blue; */
+    /* } */
+
+    /* .contact-btnBox-send:active{ */
+        /* transition: all .2s ease; */
+        /* transform: scale(.9); */
+    /* } */
+
+    /* .contact-btnBox-link{ */
+        /* color: #000; */
+        /* text-decoration: underline; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* line-height: 24px; */
+    /* } */
+
+    textarea{
+        /* border: 1px solid red; */
+        height: 96px;
+        /* resize: none; */
+        /* max-width: calc(100% - 48px); */
+        /* width: 100%; */
+    }
+
+    /* .contact-text{ */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 14px; */
+        /* color: grey; */
+        /* line-height: 20px; */
+        /* text-align: center; */
+    /* } */
+
+}
+
+@media only screen and (max-width: 900px){
+    .contact-wrapper{
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* gap: 10px; */
+        padding: 25px 0;
+    }
+
+    .contact-wrapper-title{
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 32px;
+        line-height: 30px;
+        /* font-weight: 600; */
+        margin-bottom: 5px;
+        /* color: #333; */
+    }
+
+    .contact-wrapper-text{
+        margin-bottom: 10px;
+        font-size: 16px;
+        /* line-height: 22px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-weight: 400; */
+        /* color: rgb(72, 72, 72); */
+    }
+
+    /* .contact-list{ */
+        /* width: 100%; */
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        /* border: 1px solid red; */
+        /* gap: 15px; */
+    /* } */
+
+    /* .contact-item{ */
+        /* background-color: #fff; */
+        /* max-width: (calc(100% / 2) - 20px); */
+        /* width: 100%; */
+        /* padding: 24px; */
+        /* border-radius: 18px; */
+        /* border: 1px solid grey; */
+    /* } */
+
+    /* .contact-item-infoBox{ */
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* align-items: flex-start; */
+        /* gap: 10px; */
+        /* margin-bottom: 25px; */
+    /* } */
+
+    .contact-item-infoBox-iconBox{
+        /* border: 1px solid red; */
+        /* width: 50px; */
+        height: 35px;
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* border-radius: 8px; */
+        /* background-color: #d7d6d6; */
+        /* margin-right: 10px; */
+    }
+
+    /* .contact-item-infoBox-iconBox-icon{
+        width: 20px;
+        height: 20px;
+    } */
+
+    /* .contact-item-infoBox-heading{ */
+        /* font-weight: 600; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 22px; */
+        /* margin-bottom: 5px; */
+        /* color: #333; */
+        /* border: 1px solid red; */
+    /* } */
+
+    /* .contact-item-infoBox-text{ */
+        /* font-weight: 400; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* color: gray; */
+        /* line-height: 22px; */
+    /* } */
+
+    /* .contact-sublist{ */
+        /* border: 1px solid red; */
+        /* margin-bottom: 15px; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* gap: 15px; */
+    /* } */
+
+    /* .contact-subitem{ */
+        /* display: flex; */
+        /* align-items: center; */
+        /* gap: 15px; */
+    /* } */
+
+    /* .contact-subitem-link{ */
+        /* color: rgb(77, 76, 76); */
+        /* font-size: 16px; */
+        /* line-height: 24px; */
+        /* font-family: "Plus Jakarta Sans"; */
+    /* } */
+
+    /* .contact-workTime{ */
+        /* color: rgb(121, 120, 120); */
+        /* font-size: 15px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* margin-bottom: 20px; */
+    /* } */
+
+    /* .contact-askAdvice-link{ */
+        /* display: inline-block; */
+        /* padding: 10px 20px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* color: #000; */
+        /* font-weight: 600; */
+        /* border: 1px solid grey; */
+        /* border-radius: 6px; */
+        /* margin-bottom: 20px; */
+    /* } */
+
+    /* .contact-maps{ */
+        /* border: 1px solid red; */
+        /* max-width: 100%; */
+        /* width: 100%; */
+        /* height: 230px; */
+    /* } */
+
+    /* .contact-form{ */
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* gap: 15px; */
+        /* max-width: 100%; */
+        /* width: 100%; */
+    /* } */
+
+    /* input:not(.contact-btnBox-send), textarea{ */
+        /* padding: 12px 10px; */
+        /* border: 1px solid lightgray; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* line-height: 24px;     */
+        /* border-radius: 5px; */
+    /* } */
+
+    /* input::placeholder{ */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* line-height: 24px; */
+    /* } */
+
+    /* .contact-btnBox{ */
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* gap: 15px; */
+        /* margin-bottom: 20px; */
+    /* } */
+
+    /* .contact-btnBox-send{ */
+        /* color: #fff; */
+        /* background-color: rgb(1, 1, 62); */
+        /* border: none; */
+        /* padding: 10px 15px; */
+        /* border-radius: 5px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* line-height: 24px; */
+        /* font-weight: 500; */
+        /* cursor: pointer; */
+        /* transition: all .2s ease; */
+    /* } */
+
+    /* .contact-btnBox-send:hover{ */
+        /* transition: all .2s ease; */
+        /* box-shadow: 0 0 6px 1px blue; */
+    /* } */
+
+    /* .contact-btnBox-send:active{ */
+        /* transition: all .2s ease; */
+        /* transform: scale(.9); */
+    /* } */
+
+    /* .contact-btnBox-link{ */
+        /* color: #000; */
+        /* text-decoration: underline; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 16px; */
+        /* line-height: 24px; */
+    /* } */
+
+    /* textarea{ */
+        /* border: 1px solid red; */
+        /* height: 96px; */
+        /* resize: none; */
+        /* max-width: calc(100% - 48px); */
+        /* width: 100%; */
+    /* } */
+
+    /* .contact-text{ */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 14px; */
+        /* color: grey; */
+        /* line-height: 20px; */
+        /* text-align: center; */
+    /* } */
+
+}
+
+@media only screen and (max-width: 800px){
+    .contact-wrapper{
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        gap: 8px;
+        padding: 20px 0;
+    }
+
+    /* .contact-wrapper-title{ */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 32px; */
+        /* line-height: 30px; */
+        /* font-weight: 600; */
+        /* margin-bottom: 5px; */
+        /* color: #333; */
+    /* } */
+
+    /* .contact-wrapper-text{ */
+        /* margin-bottom: 10px; */
+        /* font-size: 16px; */
+        /* line-height: 22px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-weight: 400; */
+        /* color: rgb(72, 72, 72); */
+    /* } */
+
+    .contact-list{
+        /* width: 100%; */
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        /* border: 1px solid red; */
+        gap: 10px;
+    }
+
+    .contact-item{
+        /* background-color: #fff; */
+        /* max-width: (calc(100% / 2) - 20px); */
+        /* width: 100%; */
+        padding: 20px;
+        /* border-radius: 18px; */
+        /* border: 1px solid grey; */
+    }
+
+    /* .contact-item-infoBox{ */
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* align-items: flex-start; */
+        /* gap: 10px; */
+        /* margin-bottom: 25px; */
+    /* } */
+
+    .contact-item-infoBox-iconBox{
+        /* border: 1px solid red; */
+        /* width: 50px; */
+        height: 30px;
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* border-radius: 8px; */
+        /* background-color: #d7d6d6; */
+        margin-right: 5px;
+    }
+
+    /* .contact-item-infoBox-iconBox-icon{
+        width: 20px;
+        height: 20px;
+    } */
+
+    .contact-item-infoBox-heading{
+        /* font-weight: 600; */
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 18px;
+        margin-bottom: 3px;
+        /* color: #333; */
+        /* border: 1px solid red; */
+    }
+
+    .contact-item-infoBox-text{
+        /* font-weight: 400; */
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 14px;
+        /* color: gray; */
+        line-height: 20px;
+    }
+
+    .contact-sublist{
+        /* border: 1px solid red; */
+        margin-bottom: 10px;
+        /* display: flex; */
+        /* flex-direction: column; */
+        gap: 10px;
+    }
+
+    /* .contact-subitem{ */
+        /* display: flex; */
+        /* align-items: center; */
+        /* gap: 15px; */
+    /* } */
+
+    .contact-subitem-icon{
+        width: 20px;
+        height: 20px;
+    }
+    .contact-subitem-link{
+        /* color: rgb(77, 76, 76); */
+        font-size: 14px;
+        /* line-height: 24px; */
+        /* font-family: "Plus Jakarta Sans"; */
+    }
+
+    .contact-workTime{
+        /* color: rgb(121, 120, 120); */
+        font-size: 14px;
+        /* font-family: "Plus Jakarta Sans"; */
+        margin-bottom: 15px;
+    }
+
+    .contact-askAdvice-link{
+        /* display: inline-block; */
+        padding: 9px 18px;
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 15px;
+        /* color: #000; */
+        /* font-weight: 600; */
+        /* border: 1px solid grey; */
+        /* border-radius: 6px; */
+        margin-bottom: 15px;
+    }
+
+    .contact-maps{
+        /* border: 1px solid red; */
+        /* max-width: 100%; */
+        /* width: 100%; */
+        height: 180px;
+    }
+
+    .contact-form{
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        gap: 10px;
+        /* max-width: 100%; */
+        /* width: 100%; */
+    }
+
+    input:not(.contact-btnBox-send), textarea{
+        padding: 8px 10px;
+        /* border: 1px solid lightgray; */
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 14px;
+        line-height: 20px;    
+        /* border-radius: 5px; */
+    }
+
+    input::placeholder{
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .contact-btnBox{
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* align-items: center; */
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contact-btnBox-send{
+        /* color: #fff; */
+        /* background-color: rgb(1, 1, 62); */
+        /* border: none; */
+        padding: 8px 15px;
+        /* border-radius: 5px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 14px;
+        line-height: 20px;
+        /* font-weight: 500; */
+        /* cursor: pointer; */
+        /* transition: all .2s ease; */
+    }
+
+    /* .contact-btnBox-send:hover{ */
+        /* transition: all .2s ease; */
+        /* box-shadow: 0 0 6px 1px blue; */
+    /* } */
+
+    /* .contact-btnBox-send:active{ */
+        /* transition: all .2s ease; */
+        /* transform: scale(.9); */
+    /* } */
+
+    .contact-btnBox-link{
+        /* color: #000; */
+        /* text-decoration: underline; */
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    textarea{
+        /* border: 1px solid red; */
+        height: 100px;
+        /* resize: none; */
+        /* max-width: calc(100% - 48px); */
+        /* width: 100%; */
+    }
+
+    .contact-text{
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 13px;
+        /* color: grey; */
+        line-height: 18px;
+        /* text-align: center; */
+    }
+
+}
+
+@media only screen and (max-width: 701px){
+    .contact-wrapper{
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        gap: 5px;
+        /* padding: 20px 0; */
+    }
+
+    .contact-wrapper-title{
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 26px;
+        line-height: 26px;
+        /* font-weight: 600; */
+        /* margin-bottom: 5px; */
+        /* color: #333; */
+    }
+
+    .contact-wrapper-text{
+        /* margin-bottom: 10px; */
+        font-size: 15px;
+        /* line-height: 22px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-weight: 400; */
+        /* color: rgb(72, 72, 72); */
+    }
+
+    .contact-list{
+        /* width: 100%; */
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        /* border: 1px solid red; */
+        gap: 8px;
+    }
+
+    .contact-item{
+        /* background-color: #fff; */
+        /* max-width: (calc(100% / 2) - 20px); */
+        /* width: 100%; */
+        padding: 15px 13px;
+        /* border-radius: 18px; */
+        /* border: 1px solid grey; */
+    }
+
+    .contact-item-infoBox{
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* align-items: flex-start; */
+        gap: 7px;
+        margin-bottom: 15px;
+    }
+
+    /* .contact-item-infoBox-iconBox{ */
+        /* border: 1px solid red; */
+        /* width: 50px; */
+        /* height: 30px; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* border-radius: 8px; */
+        /* background-color: #d7d6d6; */
+        /* margin-right: 5px; */
+    /* } */
+
+    /* .contact-item-infoBox-iconBox-icon{
+        width: 20px;
+        height: 20px;
+    } */
+
+    /* .contact-item-infoBox-heading{ */
+        /* font-weight: 600; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 18px; */
+        /* margin-bottom: 3px; */
+        /* color: #333; */
+        /* border: 1px solid red; */
+    /* } */
+
+    .contact-item-infoBox-text{
+        /* font-weight: 400; */
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 13px;
+        /* color: gray; */
+        /* line-height: 20px; */
+    }
+
+    .contact-sublist{
+        /* border: 1px solid red; */
+        margin-bottom: 10px;
+        /* display: flex; */
+        /* flex-direction: column; */
+        gap: 10px;
+    }
+
+    /* .contact-subitem{ */
+        /* display: flex; */
+        /* align-items: center; */
+        /* gap: 15px; */
+    /* } */
+
+    .contact-subitem-icon{
+        width: 20px;
+        height: 20px;
+    }
+    .contact-subitem-link{
+        /* color: rgb(77, 76, 76); */
+        font-size: 14px;
+        /* line-height: 24px; */
+        /* font-family: "Plus Jakarta Sans"; */
+    }
+
+    .contact-workTime{
+        /* color: rgb(121, 120, 120); */
+        font-size: 13px;
+        /* font-family: "Plus Jakarta Sans"; */
+        margin-bottom: 13px;
+    }
+
+    .contact-askAdvice-link{
+        /* display: inline-block; */
+        padding: 8px 16px;
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 14px;
+        /* color: #000; */
+        /* font-weight: 600; */
+        /* border: 1px solid grey; */
+        /* border-radius: 6px; */
+        margin-bottom: 10px;
+    }
+
+    .contact-maps{
+        /* border: 1px solid red; */
+        /* max-width: 100%; */
+        /* width: 100%; */
+        height: 160px;
+    }
+
+    .contact-form{
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        gap: 5px;
+        /* max-width: 100%; */
+        /* width: 100%; */
+    }
+
+    /* input:not(.contact-btnBox-send), textarea{ */
+        /* padding: 8px 10px; */
+        /* border: 1px solid lightgray; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 14px; */
+        /* line-height: 20px;     */
+        /* border-radius: 5px; */
+    /* } */
+
+    /* input::placeholder{ */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 14px; */
+        /* line-height: 20px; */
+    /* } */
+
+    .contact-btnBox{
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* align-items: center; */
+        gap: 5px;
+        margin-bottom: 8px;
+    }
+
+    .contact-btnBox-send{
+        /* color: #fff; */
+        /* background-color: rgb(1, 1, 62); */
+        /* border: none; */
+        padding: 6px 10px;
+        /* border-radius: 5px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 13px;
+        /* line-height: 20px; */
+        /* font-weight: 500; */
+        /* cursor: pointer; */
+        /* transition: all .2s ease; */
+    }
+
+    /* .contact-btnBox-send:hover{ */
+        /* transition: all .2s ease; */
+        /* box-shadow: 0 0 6px 1px blue; */
+    /* } */
+
+    /* .contact-btnBox-send:active{ */
+        /* transition: all .2s ease; */
+        /* transform: scale(.9); */
+    /* } */
+
+    .contact-btnBox-link{
+        /* color: #000; */
+        /* text-decoration: underline; */
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 13px;
+        /* line-height: 20px; */
+    }
+
+    textarea{
+        /* border: 1px solid red; */
+        height: 98px;
+
+        /* resize: none; */
+        /* max-width: calc(100% - 48px); */
+        /* width: 100%; */
+    }
+
+    .contact-text{
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 12px;
+        /* color: grey; */
+        line-height: 16px;
+        /* text-align: center; */
+    }
+
+}
+
+@media only screen and (max-width: 620px){
+    /* .contact-wrapper{ */
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* gap: 5px; */
+        /* padding: 20px 0; */
+    /* } */
+
+    /* .contact-wrapper-title{ */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 26px; */
+        /* line-height: 26px; */
+        /* font-weight: 600; */
+        /* margin-bottom: 5px; */
+        /* color: #333; */
+    /* } */
+
+    .contact-wrapper-text{
+        text-align: center;
+        /* margin-bottom: 10px; */
+        /* font-size: 15px; */
+        /* line-height: 22px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-weight: 400; */
+        /* color: rgb(72, 72, 72); */
+    }
+
+    .contact-list{
+        /* width: 100%; */
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        /* border: 1px solid red; */
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .contact-item{
+        /* background-color: #fff; */
+        /* max-width: (calc(100% / 2) - 20px); */
+        /* width: 100%; */
+        padding: 24px;
+        /* border-radius: 18px; */
+        /* border: 1px solid grey; */
+    }
+
+    .contact-item-infoBox{
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* align-items: flex-start; */
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .contact-item-infoBox-iconBox{
+        /* border: 1px solid red; */
+        /* width: 50px; */
+        height: 50px;
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* border-radius: 8px; */
+        /* background-color: #d7d6d6; */
+        margin-right: 10px;
+    }
+
+    .contact-item-infoBox-iconBox-icon{
+        width: 22px;
+        height: 22px;
+    }
+
+    .contact-item-infoBox-heading{
+        /* font-weight: 600; */
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 22px;
+        margin-bottom: 6px;
+        /* color: #333; */
+        /* border: 1px solid red; */
+    }
+
+    .contact-item-infoBox-text{
+        /* font-weight: 400; */
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 15px;
+        /* color: gray; */
+        /* line-height: 20px; */
+    }
+
+    .contact-sublist{
+        /* border: 1px solid red; */
+        margin-bottom: 15px;
+        /* display: flex; */
+        /* flex-direction: column; */
+        gap: 10px;
+    }
+
+    /* .contact-subitem{ */
+        /* display: flex; */
+        /* align-items: center; */
+        /* gap: 15px; */
+    /* } */
+
+    .contact-subitem-icon{
+        width: 22px;
+        height: 22px;
+    }
+    .contact-subitem-link{
+        /* color: rgb(77, 76, 76); */
+        font-size: 15px;
+        /* line-height: 24px; */
+        /* font-family: "Plus Jakarta Sans"; */
+    }
+
+    .contact-workTime{
+        /* color: rgb(121, 120, 120); */
+        font-size: 14px;
+        /* font-family: "Plus Jakarta Sans"; */
+        margin-bottom: 16px;
+    }
+
+    .contact-askAdvice-link{
+        /* display: inline-block; */
+        /* padding: 8px 16px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 16px;
+        /* color: #000; */
+        /* font-weight: 600; */
+        /* border: 1px solid grey; */
+        /* border-radius: 6px; */
+        margin-bottom: 15px;
+    }
+
+    .contact-maps{
+        /* border: 1px solid red; */
+        /* max-width: 100%; */
+        /* width: 100%; */
+        height: 200px;
+    }
+
+    .contact-form{
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        gap: 10px;
+        /* max-width: 100%; */
+        /* width: 100%; */
+    }
+
+    input:not(.contact-btnBox-send), textarea{
+        padding: 12px;
+        /* border: 1px solid lightgray; */
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 15px;
+        /* line-height: 20px;     */
+        /* border-radius: 5px; */
+    }
+
+    input::placeholder{
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .contact-btnBox{
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* align-items: center; */
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .contact-btnBox-send{
+        /* color: #fff; */
+        /* background-color: rgb(1, 1, 62); */
+        /* border: none; */
+        padding: 10px 15px;
+        /* border-radius: 5px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 16px;
+        line-height: 24px;
+        /* font-weight: 500; */
+        /* cursor: pointer; */
+        /* transition: all .2s ease; */
+    }
+
+    /* .contact-btnBox-send:hover{ */
+        /* transition: all .2s ease; */
+        /* box-shadow: 0 0 6px 1px blue; */
+    /* } */
+
+    /* .contact-btnBox-send:active{ */
+        /* transition: all .2s ease; */
+        /* transform: scale(.9); */
+    /* } */
+
+    .contact-btnBox-link{
+        /* color: #000; */
+        /* text-decoration: underline; */
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    textarea{
+        /* border: 1px solid red; */
+        height: 120px;
+
+        /* resize: none; */
+        /* max-width: calc(100% - 48px); */
+        /* width: 100%; */
+    }
+
+    .contact-text{
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 15px;
+        /* color: grey; */
+        line-height: 22px;
+        /* text-align: center; */
+    }
+
+}
+
+@media only screen and (max-width: 550px){
+    /* .contact-wrapper{ */
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* gap: 5px; */
+        /* padding: 20px 0; */
+    /* } */
+
+    /* .contact-wrapper-title{ */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 26px; */
+        /* line-height: 26px; */
+        /* font-weight: 600; */
+        /* margin-bottom: 5px; */
+        /* color: #333; */
+    /* } */
+
+    /* .contact-wrapper-text{ */
+        /* text-align: center; */
+        /* margin-bottom: 10px; */
+        /* font-size: 15px; */
+        /* line-height: 22px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-weight: 400; */
+        /* color: rgb(72, 72, 72); */
+    /* } */
+
+    /* .contact-list{ */
+        /* width: 100%; */
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        /* border: 1px solid red; */
+        /* gap: 10px; */
+        /* flex-wrap: wrap; */
+    /* } */
+
+    /* .contact-item{ */
+        /* background-color: #fff; */
+        /* max-width: (calc(100% / 2) - 20px); */
+        /* width: 100%; */
+        /* padding: 15px; */
+        /* border-radius: 18px; */
+        /* border: 1px solid grey; */
+    /* } */
+
+    /* .contact-item-infoBox{ */
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* align-items: flex-start; */
+        /* gap: 10px; */
+        /* margin-bottom: 20px; */
+    /* } */
+
+    .contact-item-infoBox-iconBox{
+        /* border: 1px solid red; */
+        /* width: 50px; */
+        height: 45px;
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* border-radius: 8px; */
+        /* background-color: #d7d6d6; */
+        margin-right: 5px;
+    }
+
+    /* .contact-item-infoBox-iconBox-icon{ */
+        /* width: 20px; */
+        /* height: 20px; */
+    /* } */
+
+    /* .contact-item-infoBox-heading{ */
+        /* font-weight: 600; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 18px; */
+        /* margin-bottom: 4px; */
+        /* color: #333; */
+        /* border: 1px solid red; */
+    /* } */
+
+    /* .contact-item-infoBox-text{ */
+        /* font-weight: 400; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 14px; */
+        /* color: gray; */
+        /* line-height: 20px; */
+    /* } */
+
+    /* .contact-sublist{ */
+        /* border: 1px solid red; */
+        /* margin-bottom: 10px; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* gap: 10px; */
+    /* } */
+
+    /* .contact-subitem{ */
+        /* display: flex; */
+        /* align-items: center; */
+        /* gap: 15px; */
+    /* } */
+
+    /* .contact-subitem-icon{ */
+        /* width: 20px; */
+        /* height: 20px; */
+    /* } */
+    /* .contact-subitem-link{ */
+        /* color: rgb(77, 76, 76); */
+        /* font-size: 14px; */
+        /* line-height: 24px; */
+        /* font-family: "Plus Jakarta Sans"; */
+    /* } */
+
+    /* .contact-workTime{ */
+        /* color: rgb(121, 120, 120); */
+        /* font-size: 14px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* margin-bottom: 16px; */
+    /* } */
+
+    /* .contact-askAdvice-link{ */
+        /* display: inline-block; */
+        /* padding: 8px 16px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 15px; */
+        /* color: #000; */
+        /* font-weight: 600; */
+        /* border: 1px solid grey; */
+        /* border-radius: 6px; */
+        /* margin-bottom: 15px; */
+    /* } */
+
+    /* .contact-maps{ */
+        /* border: 1px solid red; */
+        /* max-width: 100%; */
+        /* width: 100%; */
+        /* height: 170px; */
+    /* } */
+
+    /* .contact-form{ */
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* gap: 7px; */
+        /* max-width: 100%; */
+        /* width: 100%; */
+    /* } */
+
+    /* input:not(.contact-btnBox-send), textarea{ */
+        /* padding: 10px 12px; */
+        /* border: 1px solid lightgray; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 14px; */
+        /* line-height: 20px;     */
+        /* border-radius: 5px; */
+    /* } */
+
+    /* input::placeholder{ */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 14px; */
+        /* line-height: 20px; */
+    /* } */
+
+    /* .contact-btnBox{ */
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* gap: 12px; */
+        /* margin-bottom: 10px; */
+    /* } */
+
+    /* .contact-btnBox-send{ */
+        /* color: #fff; */
+        /* background-color: rgb(1, 1, 62); */
+        /* border: none; */
+        /* padding: 8px 10px; */
+        /* border-radius: 5px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 14px; */
+        /* line-height: 20px; */
+        /* font-weight: 500; */
+        /* cursor: pointer; */
+        /* transition: all .2s ease; */
+    /* } */
+
+    /* .contact-btnBox-send:hover{ */
+        /* transition: all .2s ease; */
+        /* box-shadow: 0 0 6px 1px blue; */
+    /* } */
+
+    /* .contact-btnBox-send:active{ */
+        /* transition: all .2s ease; */
+        /* transform: scale(.9); */
+    /* } */
+
+    /* .contact-btnBox-link{ */
+        /* color: #000; */
+        /* text-decoration: underline; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 14px; */
+        /* line-height: 20px; */
+    /* } */
+
+    /* textarea{ */
+        /* border: 1px solid red; */
+        /* height: 100px; */
+
+        /* resize: none; */
+        /* max-width: calc(100% - 48px); */
+        /* width: 100%; */
+    /* } */
+
+    /* .contact-text{ */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 14px; */
+        /* color: grey; */
+        /* line-height: 20px; */
+        /* text-align: center; */
+    /* } */
+
+}
+
+@media only screen and (max-width: 450px){
+    /* .contact-wrapper{ */
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* gap: 5px; */
+        /* padding: 20px 0; */
+    /* } */
+
+    /* .contact-wrapper-title{ */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-size: 26px; */
+        /* line-height: 26px; */
+        /* font-weight: 600; */
+        /* margin-bottom: 5px; */
+        /* color: #333; */
+    /* } */
+
+    /* .contact-wrapper-text{ */
+        /* text-align: center; */
+        /* margin-bottom: 10px; */
+        /* font-size: 15px; */
+        /* line-height: 22px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* font-weight: 400; */
+        /* color: rgb(72, 72, 72); */
+    /* } */
+
+    /* .contact-list{ */
+        /* width: 100%; */
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        /* border: 1px solid red; */
+        /* gap: 10px; */
+        /* flex-wrap: wrap; */
+    /* } */
+
+    .contact-item{
+        /* background-color: #fff; */
+        /* max-width: (calc(100% / 2) - 20px); */
+        /* width: 100%; */
+        padding: 15px;
+        /* border-radius: 18px; */
+        /* border: 1px solid grey; */
+    }
+
+    .contact-item-infoBox{
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* align-items: flex-start; */
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .contact-item-infoBox-iconBox{
+        /* border: 1px solid red; */
+        /* width: 50px; */
+        height: 40px;
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* border-radius: 8px; */
+        /* background-color: #d7d6d6; */
+        margin-right: 5px;
+    }
+
+    .contact-item-infoBox-iconBox-icon{
+        width: 20px;
+        height: 20px;
+    }
+
+    .contact-item-infoBox-heading{
+        /* font-weight: 600; */
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 18px;
+        margin-bottom: 4px;
+        /* color: #333; */
+        /* border: 1px solid red; */
+    }
+
+    .contact-item-infoBox-text{
+        /* font-weight: 400; */
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 14px;
+        /* color: gray; */
+        /* line-height: 20px; */
+    }
+
+    .contact-sublist{
+        /* border: 1px solid red; */
+        margin-bottom: 10px;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* gap: 10px; */
+    }
+
+    /* .contact-subitem{ */
+        /* display: flex; */
+        /* align-items: center; */
+        /* gap: 15px; */
+    /* } */
+
+    .contact-subitem-icon{
+        width: 20px;
+        height: 20px;
+    }
+    .contact-subitem-link{
+        /* color: rgb(77, 76, 76); */
+        font-size: 14px;
+        /* line-height: 24px; */
+        /* font-family: "Plus Jakarta Sans"; */
+    }
+
+    /* .contact-workTime{ */
+        /* color: rgb(121, 120, 120); */
+        /* font-size: 14px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        /* margin-bottom: 16px; */
+    /* } */
+
+    .contact-askAdvice-link{
+        /* display: inline-block; */
+        /* padding: 8px 16px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 15px;
+        /* color: #000; */
+        /* font-weight: 600; */
+        /* border: 1px solid grey; */
+        /* border-radius: 6px; */
+        /* margin-bottom: 15px; */
+    }
+
+    .contact-maps{
+        /* border: 1px solid red; */
+        /* max-width: 100%; */
+        /* width: 100%; */
+        height: 170px;
+    }
+
+    .contact-form{
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        gap: 7px;
+        /* max-width: 100%; */
+        /* width: 100%; */
+    }
+
+    input:not(.contact-btnBox-send), textarea{
+        padding: 10px 12px;
+        /* border: 1px solid lightgray; */
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 14px;
+        /* line-height: 20px;     */
+        /* border-radius: 5px; */
+    }
+
+    input::placeholder{
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .contact-btnBox{
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* align-items: center; */
+        gap: 12px;
+        margin-bottom: 10px;
+    }
+
+    .contact-btnBox-send{
+        /* color: #fff; */
+        /* background-color: rgb(1, 1, 62); */
+        /* border: none; */
+        padding: 8px 10px;
+        /* border-radius: 5px; */
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 14px;
+        line-height: 20px;
+        /* font-weight: 500; */
+        /* cursor: pointer; */
+        /* transition: all .2s ease; */
+    }
+
+    /* .contact-btnBox-send:hover{ */
+        /* transition: all .2s ease; */
+        /* box-shadow: 0 0 6px 1px blue; */
+    /* } */
+
+    /* .contact-btnBox-send:active{ */
+        /* transition: all .2s ease; */
+        /* transform: scale(.9); */
+    /* } */
+
+    .contact-btnBox-link{
+        /* color: #000; */
+        /* text-decoration: underline; */
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    textarea{
+        /* border: 1px solid red; */
+        height: 100px;
+
+        /* resize: none; */
+        /* max-width: calc(100% - 48px); */
+        /* width: 100%; */
+    }
+
+    .contact-text{
+        /* font-family: "Plus Jakarta Sans"; */
+        font-size: 14px;
+        /* color: grey; */
+        line-height: 20px;
+        /* text-align: center; */
+    }
+
+}
+
+
+
+
+
+/* Contact section end */
+
 
 /* MAIN STYLE END */
 

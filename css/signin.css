@@ -87,6 +87,7 @@
     border: none;
     background-color: #F55D25;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .signInIntro-wrapper-text{
