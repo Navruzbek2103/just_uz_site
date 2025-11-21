@@ -6,6 +6,7 @@ const elBody = document.querySelector("body")
 const getSortList = document.querySelector(".lawyersPage-box-result-list")
 const getModal = document.querySelector(".userpicModal")
 const getAvatar = document.querySelector(".lawyerProfile-imgBox")
+const getBody = document.querySelector("body")
 
 let counterClickDirection = 0;
 function showSelectDirectionDropdownFunc(){
@@ -105,6 +106,10 @@ function showAvatar () {
     getAvatar.addEventListener("click", (e) => {
         if(e.target.className === "lawyerProfile-imgBox" || e.target.className === "lawyerProfile-imgBox-img"){
             getModal.classList.add("userpicModal-active")
+            getBody.style.overflow = "hidden"    
+            window.scrollTo({
+                top: 0,
+            })
         }
     })
 }
@@ -117,6 +122,7 @@ function closeAvatar() {
         
         if(e.target.className === "userpicModal userpicModal-active" || e.target.className === "userpicModal-closeIcon"){
             getModal.classList.remove("userpicModal-active")
+            getBody.style.overflow = "scroll"    
         }
     })
 
