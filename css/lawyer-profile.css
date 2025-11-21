@@ -37,12 +37,15 @@
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    cursor: pointer;
 }    
 
 .lawyerProfile-imgBox-img{
     border-radius: 5px;
-    width: 114px;
-    height: 151px;
+    width: 100%;
+    /* width: 114px; */
+    /* height: 151px; */
+    cursor: pointer;
 }
 
 .lawyerProfile-content{
@@ -207,4 +210,59 @@
     padding: 15px 10px;
     font-size: 15px;
     line-height: 28px;
+}
+
+.userpicModal{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    backdrop-filter: blur(10px);
+    z-index: 99999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.userpicModal-active{
+    display: flex;
+}
+
+.userpicModal-imgBox{
+    max-width: 400px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.userpicModal-closeIcon{
+    position: absolute;
+    top: 100px;
+    left: 64%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all .2s ease;
+}
+
+.userpicModal-closeIcon:hover{
+    transition: all .2s ease;
+    box-shadow: 0 0 10px 1px #fff;
+}
+
+.userpicModal-closeIcon:active{
+    transform: scale(.9);
+    transition: all .2s ease;
+
+}
+
+.userpicModal-imgBox-img{
+    width: 100%;
 }

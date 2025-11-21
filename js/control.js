@@ -4,7 +4,8 @@ const getSelectDirectionList = document.querySelector(".intro-wrapper-directionL
 const getSelectAreaList = document.querySelector(".intro-wrapper-selectAreaList")
 const elBody = document.querySelector("body")
 const getSortList = document.querySelector(".lawyersPage-box-result-list")
-
+const getModal = document.querySelector(".userpicModal")
+const getAvatar = document.querySelector(".lawyerProfile-imgBox")
 
 let counterClickDirection = 0;
 function showSelectDirectionDropdownFunc(){
@@ -100,3 +101,24 @@ function showSortByList (){
 
 showSortByList()
 
+function showAvatar () {
+    getAvatar.addEventListener("click", (e) => {
+        if(e.target.className === "lawyerProfile-imgBox" || e.target.className === "lawyerProfile-imgBox-img"){
+            getModal.classList.add("userpicModal-active")
+        }
+    })
+}
+
+showAvatar()
+
+function closeAvatar() {
+    getModal.addEventListener("click", (e) => {
+        console.log(e.target);
+        
+        if(e.target.className === "userpicModal userpicModal-active" || e.target.className === "userpicModal-closeIcon"){
+            getModal.classList.remove("userpicModal-active")
+        }
+    })
+
+}
+closeAvatar()
