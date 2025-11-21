@@ -89,8 +89,9 @@ input{
     font-size: 14px;
     font-family: "Plus Jakarta Sans";
     line-height: 24px;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     border-radius: 3px;
+    /* border: 1px solid red; */
 }
 
 input::placeholder{
@@ -101,7 +102,7 @@ input::placeholder{
 
 .signupIntro-middle-inputName{
     /* position: relative; */
-    padding-left: 33px;
+    padding-left: 33px !important;
     margin-bottom: 25px;
     background-image: url("./../images/user.png");
     background-repeat: no-repeat;
@@ -110,12 +111,13 @@ input::placeholder{
 }
 
 .signupIntro-middle-inputMail{
-    padding-left: 33px;
+    padding-left: 33px !important;
     background-image: url("./../images/email-dark.png");
     background-repeat: no-repeat;
     background-size: 15px;
     background-position: center left 12px;
     margin-bottom: 25px;
+    /* border: 1px solid red !important; */
 }
 
 .signupIntro-middle-inputPassword{

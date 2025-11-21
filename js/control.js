@@ -3,6 +3,8 @@ const getSelectArea = document.querySelector(".intro-wrapper-itemArea")
 const getSelectDirectionList = document.querySelector(".intro-wrapper-directionList")
 const getSelectAreaList = document.querySelector(".intro-wrapper-selectAreaList")
 const elBody = document.querySelector("body")
+const getSortList = document.querySelector(".lawyersPage-box-result-list")
+
 
 let counterClickDirection = 0;
 function showSelectDirectionDropdownFunc(){
@@ -26,7 +28,9 @@ function showSelectDirectionDropdownFunc(){
                 getSelectDirectionList.previousElementSibling.classList.remove("intro-wrapper-item-downArrowRole-active")
             }
         }
-        else{
+        else if(p.target.className === "intro-wrapper" || p.target.className === "container-big intro container-big" || p.target.className === "intro-wrapper-text" || p.target.className === "intro-wrapper-title"){
+            console.log(p.target);
+            
             getSelectDirectionList.classList.remove("intro-wrapper-directionList-active")
             getSelectDirectionList.previousElementSibling.classList.remove("intro-wrapper-item-downArrowRole-active")
         }
@@ -52,7 +56,7 @@ function showSelectAreaDropdownFunc(){
                 getSelectAreaList.previousElementSibling.classList.remove("intro-wrapper-item-downArrowArea-active")
             }
         }
-        else{
+        else if(e.target.className === "intro-wrapper" || e.target.className === "container-big intro container-big" || e.target.className === "intro-wrapper-text" || e.target.className === "intro-wrapper-title"){
             getSelectAreaList.classList.remove("intro-wrapper-selectAreaList-active")
             getSelectAreaList.previousElementSibling.classList.remove("intro-wrapper-item-downArrowArea-active")
         }
@@ -71,3 +75,28 @@ window.addEventListener("scroll", () => {
 
     }
 })
+
+function showSortByList (){
+    elBody.addEventListener("click", (e) => {
+        if(e.target.className === "lawyersPage-box-result-text"){
+            counterClickDirection++
+            if(counterClickDirection % 2 !== 0){
+                getSortList.style.display = "block"
+            }
+            else{
+                getSortList.style.display = "none"
+            }
+        }
+        
+        else if (e.target.className === "lawyersPage-box-result-item"){
+            counterClickDirection++
+            getSortList.style.display = "none"
+            e.target.parentNode.previousElementSibling.textContent = e.target.textContent
+                
+        }
+        
+    })
+}
+
+showSortByList()
+
