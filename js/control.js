@@ -69,7 +69,7 @@ showSelectAreaDropdownFunc()
 window.addEventListener("scroll", () => {
     const header = document.querySelector(".header");
 
-    if(window.scrollY > 80){
+    if(window.scrollY > 20){
         header.classList.add("header-active")
     }
     else{
